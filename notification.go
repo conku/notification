@@ -3,11 +3,11 @@ package notification
 import (
 	"path"
 
-	"github.com/qor/admin"
-	"github.com/qor/qor"
-	"github.com/qor/qor/resource"
-	"github.com/qor/qor/utils"
-	"github.com/qor/roles"
+	"github.com/conku/admin"
+	"github.com/conku/qor"
+	"github.com/conku/qor/resource"
+	"github.com/conku/qor/utils"
+	"github.com/conku/roles"
 )
 
 type Notification struct {
@@ -68,7 +68,7 @@ func (notification *Notification) GetNotification(user interface{}, messageID st
 func (notification *Notification) ConfigureQorResource(res resource.Resourcer) {
 	if res, ok := res.(*admin.Resource); ok {
 		Admin := res.GetAdmin()
-		Admin.RegisterViewPath("github.com/qor/notification/views")
+		Admin.RegisterViewPath("github.com/conku/notification/views")
 
 		if len(notification.Channels) == 0 {
 			utils.ExitWithMsg("No channel defined for notification")

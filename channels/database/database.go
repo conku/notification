@@ -5,9 +5,9 @@ import (
 	"reflect"
 	"strconv"
 
+	"github.com/conku/notification"
+	"github.com/conku/qor"
 	"github.com/jinzhu/gorm"
-	"github.com/qor/notification"
-	"github.com/qor/qor"
 )
 
 type Config struct {

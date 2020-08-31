@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/qor/admin"
-	"github.com/qor/qor/utils"
+	"github.com/conku/admin"
+	"github.com/conku/qor/utils"
 )
 
 func (notification *Notification) Action(action *Action) error {

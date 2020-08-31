@@ -3,8 +3,8 @@ package notification
 import (
 	"time"
 
+	"github.com/conku/admin"
 	"github.com/jinzhu/gorm"
-	"github.com/qor/admin"
 )
 
 type Message struct {
