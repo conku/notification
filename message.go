@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/conku/admin"
-	"github.com/jinzhu/gorm"
+	"github.com/conku/gorm"
 )
 
 type Message struct {
